@@ -39,17 +39,20 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
             setMenu(true);
         }
     }
-
+    
     const changeToSpanish = ():void => {
-        setLenguage("ES");
+        if (setLenguage) {
+            setLenguage("ES");
+        }
         setOpen(false);
     }
 
     const changeToEnglish = ():void => {
-        setLenguage("EN");
+        if (setLenguage) {
+            setLenguage("EN");
+        }
         setOpen(false);
     }
-
 
     return (
 <>

@@ -8,7 +8,7 @@ export const Footer:React.FC<ComponentProps> = ({lenguage}) => {
             <motion.div 
         whileHover={{ scale: 1.1, backgroundColor: '#3d3d3d' }}
         whileTap={{ scale: 0.6 }}
-        className="-bottom-3 -left-52 lg:-left-44 absolute lg:h-24 lg:w-24 justify-center items-center text-white cursor-pointer border rounded-full hidden sm:flex"
+        className="bottom-8 -left-52 lg:left-16 absolute lg:h-24 lg:w-24 justify-center items-center text-white cursor-pointer border rounded-full hidden sm:flex"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <KeyboardArrowUp fontSize="large"></KeyboardArrowUp>
             </motion.div>
