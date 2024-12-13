@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer.tsx"
 
 export const App: React.FC = () => {
 
-  const [lenguage, setLenguage] = useState<"EN" | "ES">("ES");
+  const [lenguage, setLenguage] = useState<"EN" | "ES">("EN");
 
   return (
     <>
