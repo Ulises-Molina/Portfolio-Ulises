@@ -21,7 +21,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
             src="/proyectos/mercadosur-rec.gif" alt="gif proyecto MercadoSur" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
             <span
             className="absolute flex justify-center items-center bg-gray-700 bg-opacity-15 w-full bottom-0 h-0 group-hover:h-1/3 transition-all duration-500 ease-in-out">
-                <p className="text-gray-900 z-30 text-2xl opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>
+                <p className="text-gray-900 z-30 text-md opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>
             </span>
             </a>
         </motion.div>
