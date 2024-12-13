@@ -16,7 +16,7 @@ export const Logo = ({src,alt,delay,y,x,link}:{src:string,alt:string,delay:numbe
                             repeat: Infinity,
                             delay: delay,
                         }}
-                        src={src} alt={alt} className="lg:w-[60px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-10">
+                        src={src} alt={alt} className="lg:w-[45px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-10">
         </motion.img>
         </a>
     )

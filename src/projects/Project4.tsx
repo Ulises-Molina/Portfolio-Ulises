@@ -12,7 +12,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}  
-        className="flex flex-col lg:flex-row lg:max-h-[450px] gap-16 lg:gap-32">
+        className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32">
         <motion.div 
         whileHover={{ scale: 1.05}}
         className="h-full hover:cursor-pointer  md:min-w-[700px] relative group transition-all duration-500 overflow-hidden">
@@ -30,10 +30,10 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}  
-        className="flex flex-col gap-6 lg:gap-12 max-w-[800px] justify-center items-center lg:justify-normal lg:items-start m-2">
-            <p className="text-md lg:text-2xl text-center lg:text-left">{lenguage === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work. Minimalist website" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra. Pagina web minimalista"}</p>
-            <p className="text-md lg:text-2xl">Website : <a href="https://gallery-art-seven.vercel.app/" target="_blank" className="text-blue-600">https://gallery-art-seven.vercel.app</a></p>
-            <p className="text-md lg:text-2xl">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center lg:items-start m-2">
+            <p className="text-md lg:text-md text-center lg:text-left">{lenguage === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work. Minimalist website" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra. Pagina web minimalista"}</p>
+            <p className="text-md lg:text-md">Website : <a href="https://gallery-art-seven.vercel.app/" target="_blank" className="text-blue-600">https://gallery-art-seven.vercel.app</a></p>
+            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
             <div className="flex gap-10">
                 <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
                 <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={10} link="https://tailwindcss.com/"></Logo>
@@ -41,7 +41,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
                 <Logo src="/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
             </div>
             <a href="https://github.com/Ulises-Molina/GalleryArt" target="_blank">
-            <Button variant="outlined" color="inherit" className="w-38 lg:w-48 scale-75 lg:scale-100 hover:bg-slate-700">GitHub repo</Button>
+            <Button variant="outlined" color="inherit" className="w-38 lg:w-48 scale-75 hover:bg-slate-700">GitHub repo</Button>
             </a>
         </motion.div>
     </motion.section>

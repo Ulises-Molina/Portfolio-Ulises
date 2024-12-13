@@ -20,11 +20,11 @@ export const Main: React.FC<ComponentProps> = ({lenguage}) => {
             animate ={{ opacity: 1,translateY: 0 }}
             transition={{ duration: 2.5 }}
             className="lg:w-2/5 flex flex-col justify-center gap-3 lg:gap-7 self-start ml-7 lg:self-center">
-                <h1 className="text-2xl lg:text-2xl  font-medium">{lenguage === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</h1>
+                <h1 className="text-2xl lg:text-4xl font-bold">{lenguage === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</h1>
                 <h2 className="lg:text-xl  font-normal">{lenguage === "EN" ? "I'm a Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</h2>
-                <p className="lg:text-xl">{lenguage === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</p>
+                <p className="lg:text-lg">{lenguage === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</p>
                 <div className="flex flex-col gap-10 mt-10 ">
-                    <p className="lg:text-3xl">{lenguage === "EN" ? "Principal technologies" : "Tecnologías principales"}</p>
+                    <p className="lg:text-xl">{lenguage === "EN" ? "Principal technologies" : "Tecnologías principales"}</p>
                     <div className="flex gap-5 lg:gap-20">
                         <Logo src="/logos/javascript.svg" alt="logo Javascript" delay={0} y={10} x={18} link="https://developer.mozilla.org/es/docs/Web/JavaScript"></Logo>
                         <Logo src="/logos/typescript.svg" alt="logo Typescript" delay={1} y={13} x={2} link="https://www.typescriptlang.org/"></Logo>
@@ -35,7 +35,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage}) => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-10 mt-10 ">
-                    <p className="lg:text-3xl">{lenguage === "EN" ? "Tools and others" : "Herramientas y otros"}</p>
+                    <p className="lg:text-xl">{lenguage === "EN" ? "Tools and others" : "Herramientas y otros"}</p>
                     <div className="flex gap-5 lg:gap-20">
                     <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={12} x={10} link="https://tailwindcss.com/"></Logo>
                         <Logo src="/logos/git.svg" alt="logo Git" delay={0} y={5} x={5} link="https://github.com/Ulises-Molina"></Logo>

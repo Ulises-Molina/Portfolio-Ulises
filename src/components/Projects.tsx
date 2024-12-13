@@ -8,13 +8,13 @@ import {AnimatePresence, motion} from "motion/react"
 export const Projects:React.FC<ComponentProps> = ({lenguage}) => {
     return (
     <><AnimatePresence mode="wait">
-        <article id="projects" className="flex flex-col overflow-hidden items-center lg:h-[230vh] mt-32 gap-24 lg:gap-64">
+        <article id="projects" className="flex flex-col overflow-hidden items-center lg:h-[250vh] mt-32 gap-24 lg:gap-64">
             <motion.h2
             key={lenguage}
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className="text-3xl lg:text-6xl font-medium">{lenguage === "EN" ? "Projects" : "Proyectos"}</motion.h2>
+            className="text-3xl lg:text-4xl font-medium">{lenguage === "EN" ? "Projects" : "Proyectos"}</motion.h2>
             <Project3 lenguage={lenguage}/>
             <Project1 lenguage={lenguage}/>
             <Project2 lenguage={lenguage}/>

@@ -56,11 +56,11 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
 
     return (
 <>
-    <header className="hidden sticky top-0 w-screen h-28 lg:flex justify-between items-center px-24 backdrop-blur-sm">
+    <header className="hidden sticky top-0 w-screen h-24 lg:flex justify-between items-center px-16 backdrop-blur-sm">
     <AnimatePresence mode="wait">
         <motion.ul
         key={lenguage}
-        className="flex gap-20 text-2xl">
+        className="flex gap-20 text-lg">
             <motion.a
             initial={{ opacity: 0,translateY: -80 }}
             animate={{ opacity: 1, translateY : 0 }}
@@ -108,25 +108,25 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
                 initial={{ opacity: 0, translateY: -50 }}
                 animate={{ opacity: 1, translateY: 0, transition: { duration: .6 } }}
                 exit={{ opacity: 0, translateY: -50, transition: { duration: .6 } }}
-                className="absolute w-48 h-36 bg-gray-400 rounded-lg top-14 right-0 z-10 flex"
+                className="absolute w-36 h-24 bg-gray-400 rounded-lg top-14 right-0 z-10 flex"
                 >
                 <ul className="flex flex-col w-full h-full">
-                    <li className="text-2xl rounded-t-lg flex justify-center items-center gap-4 w-full h-full hover:cursor-pointer hover:bg-slate-500" onClick={changeToEnglish}>
-                    <img className="w-9 h-9" src="/logos/estados-unidos-48.png" />
+                    <li className="text-lg rounded-t-lg flex justify-center items-center gap-4 w-full h-full hover:cursor-pointer hover:bg-slate-500" onClick={changeToEnglish}>
+                    <img className="w-7 h-7" src="/logos/estados-unidos-48.png" />
                     <p>English</p>
                     </li>
-                    <li className="text-2xl flex rounded-b-lg justify-center items-center w-full h-full gap-4 hover:cursor-pointer hover:bg-slate-500 border-slate-500 border-t" onClick={changeToSpanish}>
-                    <img className="w-9 h-9" src="/logos/españa-48.png" />
+                    <li className="text-lg flex rounded-b-lg justify-center items-center w-full h-full gap-4 hover:cursor-pointer hover:bg-slate-500 border-slate-500 border-t" onClick={changeToSpanish}>
+                    <img className="w-7 h-7" src="/logos/españa-48.png" />
                     <p>Español</p>
                     </li>
                 </ul>
                 </motion.div>
             )}
             </AnimatePresence>
-                {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/>}
-            <img src="/logos/icons8-48.png"></img>
+                {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="small"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="small"/>}
+            <img src="/logos/icons8-48.png" alt="logo idioma" className="w-9 h-9"></img>
             </div>
-            {darkMode ? <LightMode className="cursor-pointer hover:opacity-60" fontSize="large" onClick={changeMode}/> : <DarkMode className="cursor-pointer hover:opacity-60" fontSize="large" onClick={changeMode}/>}
+            {darkMode ? <LightMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/> : <DarkMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/>}
         </div>
     </header>
 
