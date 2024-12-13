@@ -15,8 +15,8 @@ export const Projects:React.FC<ComponentProps> = ({lenguage}) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             className="text-3xl lg:text-6xl font-medium">{lenguage === "EN" ? "Projects" : "Proyectos"}</motion.h2>
-            <Project1 lenguage={lenguage}/>
             <Project3 lenguage={lenguage}/>
+            <Project1 lenguage={lenguage}/>
             <Project2 lenguage={lenguage}/>
             <Project4 lenguage={lenguage}/>
         </article>
