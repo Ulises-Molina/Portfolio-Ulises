@@ -18,7 +18,7 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
         className="h-full hover:cursor-pointer  md:min-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://organizarte.vercel.app/" target="_blank">
             <motion.img 
-            src="/public/proyectos/organizarte.gif" alt="gif proyecto Organizarte" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
+            src="/proyectos/organizarte.gif" alt="gif proyecto Organizarte" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
             <span
             className="absolute flex justify-center items-center bg-gray-700 bg-opacity-15 w-full bottom-0 h-0 group-hover:h-1/3 transition-all duration-500 ease-in-out">
                 <p className="text-gray-900 z-30 text-2xl opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>
@@ -35,10 +35,10 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
             <p className="text-md lg:text-2xl">Website : <a href="https://organizarte.vercel.app/" target="_blank" className="text-blue-600">https://organizarte.vercel.app</a></p>
             <p className="text-md lg:text-2xl">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
             <div className="flex gap-10">
-                <Logo src="/public/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
-                <Logo src="/public/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={10} link="https://tailwindcss.com/"></Logo>
-                <Logo src="/public/logos/firebase.svg" alt="logo Firebase" delay={0.5} y={6} x={6} link="https://firebase.google.com/?hl=es-419"></Logo>
-                <Logo src="/public/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
+                <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
+                <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={10} link="https://tailwindcss.com/"></Logo>
+                <Logo src="/logos/firebase.svg" alt="logo Firebase" delay={0.5} y={6} x={6} link="https://firebase.google.com/?hl=es-419"></Logo>
+                <Logo src="/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
             </div>
             <a href="https://github.com/Ulises-Molina/Organizarte" target="_blank">
             <Button variant="outlined" color="inherit" className="w-38 lg:w-48 scale-75 lg:scale-100 hover:bg-slate-700">GitHub repo</Button>

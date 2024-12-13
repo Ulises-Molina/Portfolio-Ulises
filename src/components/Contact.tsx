@@ -31,7 +31,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/public/logos/gmail.svg" alt="gmail logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3">
+                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3">
         </motion.img>
         </a>
         <a href={"https://www.linkedin.com/in/ulises-molina-b7ab4b274/"} target="_blank">
@@ -47,7 +47,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/public/logos/linkedin.svg" alt="gmail logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
+                        src="/logos/linkedin.svg" alt="gmail logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
         </motion.img>
         </a>
         <a href={"https://github.com/Ulises-Molina"} target="_blank">
@@ -63,7 +63,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/public/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
+                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[100px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
         </motion.img>
         </a>
         </div>
