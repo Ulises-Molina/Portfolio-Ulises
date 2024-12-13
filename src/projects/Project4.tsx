@@ -15,7 +15,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
         className="flex flex-col lg:flex-row lg:max-h-[250px] xl:max-h-[300px] gap-16 lg:gap-32">
         <motion.div 
         whileHover={{ scale: 1.05}}
-        className="h-full hover:cursor-pointer  md:min-w-[700px] relative group transition-all duration-500 overflow-hidden">
+        className="h-full hover:cursor-pointer  md:min-w-[500px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://gallery-art-seven.vercel.app/" target="_blank">
             <motion.img 
             src="/proyectos/gallery-rec.gif" alt="gif proyecto Gallery" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
