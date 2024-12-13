@@ -12,7 +12,7 @@ export const Project2:React.FC<ComponentProps> = ({lenguage}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
-        className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32">
+        className="flex flex-col lg:flex-row xl:max-h-[300px] lg:max-h-[250px] gap-16 lg:gap-32">
         <motion.div 
         whileHover={{ scale: 1.05}}
         className="h-full hover:cursor-pointer  md:min-w-[700px] relative group transition-all duration-500 overflow-hidden">
