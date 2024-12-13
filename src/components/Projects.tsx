@@ -8,7 +8,7 @@ import {AnimatePresence, motion} from "motion/react"
 export const Projects:React.FC<ComponentProps> = ({lenguage}) => {
     return (
     <><AnimatePresence mode="wait">
-        <article id="projects" className="flex flex-col overflow-hidden items-center lg:h-[250vh] mt-32 gap-24 lg:gap-64">
+        <article id="projects" className="flex flex-col overflow-hidden items-center mt-32 gap-24 lg:gap-64">
             <motion.h2
             key={lenguage}
             initial={{ opacity: 0, y: 60 }}
