@@ -112,11 +112,11 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
                 >
                 <ul className="flex flex-col w-full h-full">
                     <li className="text-2xl rounded-t-lg flex justify-center items-center gap-4 w-full h-full hover:cursor-pointer hover:bg-slate-500" onClick={changeToEnglish}>
-                    <img className="w-9 h-9" src="/public/estados-unidos-48.png" />
+                    <img className="w-9 h-9" src="/public/logos/estados-unidos-48.png" />
                     <p>English</p>
                     </li>
                     <li className="text-2xl flex rounded-b-lg justify-center items-center w-full h-full gap-4 hover:cursor-pointer hover:bg-slate-500 border-slate-500 border-t" onClick={changeToSpanish}>
-                    <img className="w-9 h-9" src="/public/españa-48.png" />
+                    <img className="w-9 h-9" src="/public/logos/españa-48.png" />
                     <p>Español</p>
                     </li>
                 </ul>
@@ -124,7 +124,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
             )}
             </AnimatePresence>
                 {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/>}
-            <img src="/public/icons8-48.png"></img>
+            <img src="/public/logos/icons8-48.png"></img>
             </div>
             {darkMode ? <LightMode className="cursor-pointer hover:opacity-60" fontSize="large" onClick={changeMode}/> : <DarkMode className="cursor-pointer hover:opacity-60" fontSize="large" onClick={changeMode}/>}
         </div>
@@ -175,11 +175,11 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
                 >
                 <ul className="flex flex-col w-full h-full">
                     <li className="text-2xl rounded-t-lg flex justify-center items-center gap-4 w-full h-full hover:cursor-pointer hover:bg-slate-500" onClick={changeToEnglish}>
-                    <img className="w-9 h-9" src="/public/estados-unidos-48.png" />
+                    <img className="w-9 h-9" src="/public/logos/estados-unidos-48.png" />
                     <p>English</p>
                     </li>
                     <li className="text-2xl flex rounded-b-lg justify-center items-center w-full h-full gap-4 hover:cursor-pointer hover:bg-slate-500 border-slate-500 border-t" onClick={changeToSpanish}>
-                    <img className="w-9 h-9" src="/public/españa-48.png" />
+                    <img className="w-9 h-9" src="/public/logos/españa-48.png" />
                     <p>Español</p>
                     </li>
                 </ul>
@@ -187,7 +187,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage}) => {
             )}
             </AnimatePresence>
                 {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/>}
-            <img src="/public/icons8-48.png"></img>
+            <img src="/public/logos/icons8-48.png"></img>
             </div>
         </div>
     </motion.div>: null}
