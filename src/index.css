@@ -15,7 +15,7 @@ body {
 
 .dark-mode {
     background-color : #373743;
-    background-image: url("pattern-randomized1.svg");
+    background-image: url("/pattern-randomized1.svg");
     backdrop-filter: blur(0.7px);
     color: #d7d7e0;
     transition: color 0.5s ease;
@@ -23,7 +23,7 @@ body {
 }
 
 .light-mode {
-    background-image: url("pattern-randomizedligth.svg");
+    background-image: url("/pattern-randomizedligth.svg");
     backdrop-filter: blur(1px);
     background-color: #b5b6c4;
     color: #373743;
