@@ -11,7 +11,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage}) => {
                 initial ={{ opacity: 0,translateX: -50, rotate: -5 }}
                 animate ={{ opacity: 1,translateX: 0, rotate: 0 }}
                 transition={{ duration: 1.5 }}
-                className="filter brightness-115 contrast-115 saturate-110 w-2/5 rounded-2xl min-h-56 min-w-56 lg:min-h-0 lg:min-w-0 center" src="./public/foto.png"></motion.img>
+                className="filter brightness-115 contrast-115 saturate-110 w-2/5 rounded-2xl min-h-56 min-w-56 lg:min-h-0 lg:min-w-0 center" src="/foto.png"></motion.img>
             </div>
             <AnimatePresence mode="wait">
             <motion.div 
@@ -41,7 +41,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage}) => {
                         <Logo src="/public/logos/git.svg" alt="logo Git" delay={0} y={5} x={5} link="https://github.com/Ulises-Molina"></Logo>
                         <Logo src="/public/logos/Github_light.svg" alt="logo Github" delay={1.2} y={10} x={5} link="https://github.com/Ulises-Molina"></Logo>
                         <Logo src="/public/logos/firebase.svg" alt="logo Firebase" delay={0.5} y={7} x={12} link="https://firebase.google.com/?hl=es-419"></Logo>
-                        <Logo src="/public/logos/postman.svg" alt="logo Postman" delay={0.9} y={13} x={9} link="https://www.postman.com/"></Logo>
+                        <Logo src="/logos/postman.svg" alt="logo Postman" delay={0.9} y={13} x={9} link="https://www.postman.com/"></Logo>
                         <Logo src="/public/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
                     </div>
                 </div>
