@@ -9,9 +9,6 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}  
         className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32">
         <motion.div 
         whileHover={{ scale: 1.05}}
