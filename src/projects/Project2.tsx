@@ -9,7 +9,7 @@ export const Project2:React.FC<ComponentProps> = ({lenguage}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
-        className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32">
+        className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32 justify-center">
         <motion.div 
         whileHover={{ scale: 1.05}}
         className="hover:cursor-pointer  md:min-w-[500px] relative group transition-all duration-500 overflow-hidden">

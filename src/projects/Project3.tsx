@@ -27,7 +27,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
-        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center lg:items-start m-2">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[700px] justify-center items-center lg:items-start m-2">
             <p className="text-md lg:text-md text-center lg:text-left">{lenguage === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como busqueda por categoria, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
             <p className="text-md lg:text-md">Website : <a href="https://mercado-sur.vercel.app/" target="_blank" className="text-blue-600">https://mercado-sur.vercel.app/</a></p>
             <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
