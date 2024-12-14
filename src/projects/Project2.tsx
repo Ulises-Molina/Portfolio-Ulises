@@ -12,7 +12,7 @@ export const Project2:React.FC<ComponentProps> = ({lenguage}) => {
         className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32 justify-center">
         <motion.div 
         whileHover={{ scale: 1.05}}
-        className="hover:cursor-pointer  md:min-w-[500px] relative group transition-all duration-500 overflow-hidden">
+        className="hover:cursor-pointer  md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://aransol.vercel.app/" target="_blank">
             <motion.img 
             src="/proyectos/aransol-rec.gif" alt="gif proyecto Aransol" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>

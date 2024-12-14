@@ -12,7 +12,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
         className="flex flex-col lg:flex-row lg:max-h-[300px] gap-16 lg:gap-32 justify-center">
         <motion.div 
         whileHover={{ scale: 1.05}}
-        className=" hover:cursor-pointer  md:min-w-[500px] relative group transition-all duration-500 overflow-hidden">
+        className=" hover:cursor-pointer md:min-w-[550px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://mercado-sur.vercel.app/" target="_blank">
             <motion.img 
             src="/proyectos/mercadosur-rec.gif" alt="gif proyecto MercadoSur" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
@@ -27,7 +27,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
-        className="flex flex-col gap-6 lg:gap-8 max-w-[700px] justify-center items-center lg:items-start m-2">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center lg:items-start m-2">
             <p className="text-md lg:text-md text-center lg:text-left">{lenguage === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como busqueda por categoria, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
             <p className="text-md lg:text-md">Website : <a href="https://mercado-sur.vercel.app/" target="_blank" className="text-blue-600">https://mercado-sur.vercel.app/</a></p>
             <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
