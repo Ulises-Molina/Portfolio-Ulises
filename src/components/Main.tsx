@@ -5,7 +5,7 @@ import { ComponentProps } from "../types/types";
 export const Main: React.FC<ComponentProps> = ({lenguage}) => {
     return (
         <>
-        <main id="home" className="w-screen flex flex-col lg:flex-row lg:h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
+        <main id="home" className="w-screen flex flex-col lg:flex-row lg:min-h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
             <div className="w-1/2 flex justify-center items-center">
                 <motion.img
                 initial ={{ opacity: 0,translateX: -50, rotate: -5 }}

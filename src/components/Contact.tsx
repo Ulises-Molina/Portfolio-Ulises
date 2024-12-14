@@ -12,7 +12,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }} 
-    className="flex flex-col lg:h-[80vh] items-center mt-32 md:mt-72 lg:mt-72 xl:mt-32 gap-6 lg:gap-32 mb-20">
+    className="flex flex-col lg:min-h-[80vh] items-center mt-32 md:mt-72 lg:mt-72 xl:mt-32 gap-6 lg:gap-32 mb-20">
         <h2
         className="text-3xl lg:text-4xl font-medium">{lenguage === "EN" ? "Contact me" : "Contacto"}</h2>
         <div className="flex flex-col gap-28 mt-28">
