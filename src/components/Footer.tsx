@@ -2,9 +2,10 @@ import { ComponentProps } from "../types/types"
 import { KeyboardArrowUp } from "@mui/icons-material"
 import { motion } from "motion/react"
 
-export const Footer:React.FC<ComponentProps> = ({lenguage}) => {
+export const Footer:React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
-        <footer className="flex flex-row items-center gap-4 lg:py-5 py-5 border-t border-gray-600 justify-center relative">
+        <>
+        {menu ? null : <footer className="flex flex-row items-center gap-4 lg:py-5 py-5 border-t border-gray-600 justify-center relative">
             <motion.div 
         whileHover={{ scale: 1.1, backgroundColor: '#3d3d3d' }}
         whileTap={{ scale: 0.6 }}
@@ -15,6 +16,7 @@ export const Footer:React.FC<ComponentProps> = ({lenguage}) => {
             <div className="flex flex-col gap-4 text-center">
                 <p className="lg:text-sm">{lenguage === "EN" ? "© Ulises Molina 2024" : "© Ulises Molina 2024"}</p>
             <p className="lg:text-sm">ulisesmolinadev@gmail.com</p></div>
-        </footer>
+        </footer>}
+        </>
     )
 }

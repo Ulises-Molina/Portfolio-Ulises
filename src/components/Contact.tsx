@@ -3,9 +3,10 @@ import { ComponentProps } from "../types/types";
 import {motion} from "motion/react"
 
 
-export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
+export const Contact:React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
-    <AnimatePresence mode="wait">
+    <>
+    {menu ? null : <AnimatePresence mode="wait">
     <motion.section
     id="contact"
     key={lenguage}
@@ -47,7 +48,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/linkedin.svg" alt="gmail logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
+                        src="/logos/linkedin.svg" alt="linkedin logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
         </motion.img>
         </a>
         <a href={"https://github.com/Ulises-Molina"} target="_blank">
@@ -69,6 +70,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguage}) => {
         </div>
     </div>
     </motion.section>
-    </AnimatePresence>
+    </AnimatePresence>}
+    </>
     ) 
 }

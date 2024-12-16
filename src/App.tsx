@@ -10,15 +10,16 @@ import { Footer } from "./components/Footer.tsx"
 export const App: React.FC = () => {
 
   const [lenguage, setLenguage] = useState<"EN" | "ES">("EN");
+  const [menu, setMenu] = useState<boolean>(false)
 
   return (
     <>
-    <Header lenguage={lenguage} setLenguage={setLenguage}/>
-    <Main lenguage={lenguage}/>
-    <Projects lenguage={lenguage}/>
-    <About lenguage={lenguage}/>
-    <Contact lenguage={lenguage}/>
-    <Footer lenguage={lenguage}/>
+    <Header lenguage={lenguage} setLenguage={setLenguage} menu={menu} setMenu={setMenu}/>
+    <Main lenguage={lenguage} menu={menu}/>
+    <Projects lenguage={lenguage} menu={menu}/>
+    <About lenguage={lenguage} menu={menu}/>
+    <Contact lenguage={lenguage} menu={menu}/>
+    <Footer lenguage={lenguage} menu={menu}/>
     </>
   )
 }
