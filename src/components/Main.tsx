@@ -25,7 +25,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
                 <p className="2xl:text-lg text-md">{lenguage === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</p>
                 <div className="flex flex-col gap-10 mt-10 ">
                     <p className="2xl:text-xl text-md">{lenguage === "EN" ? "Principal technologies" : "Tecnologías principales"}</p>
-                    <div className="flex gap-5 lg:gap-20">
+                    <div className="flex gap-5 lg:gap-16">
                         <Logo src="/logos/javascript.svg" alt="logo Javascript" delay={0} y={10} x={18} link="https://developer.mozilla.org/es/docs/Web/JavaScript"></Logo>
                         <Logo src="/logos/typescript.svg" alt="logo Typescript" delay={1} y={13} x={2} link="https://www.typescriptlang.org/"></Logo>
                         <Logo src="/logos/html5.svg" alt="logo HTML" delay={0} y={5} x={10} link="https://developer.mozilla.org/es/docs/Web/HTML"></Logo>
