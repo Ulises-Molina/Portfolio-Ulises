@@ -36,7 +36,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
                 </div>
                 <div className="flex flex-col gap-10 mt-10 ">
                     <p className="2xl:text-xl text-md">{lenguage === "EN" ? "Tools and others" : "Herramientas y otros"}</p>
-                    <div className="flex gap-5 lg:gap-20">
+                    <div className="flex gap-5 lg:gap-16">
                     <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={12} x={10} link="https://tailwindcss.com/"></Logo>
                         <Logo src="/logos/git.svg" alt="logo Git" delay={0} y={5} x={5} link="https://github.com/Ulises-Molina"></Logo>
                         <Logo src="/logos/Github_light.svg" alt="logo Github" delay={1.2} y={10} x={5} link="https://github.com/Ulises-Molina"></Logo>
