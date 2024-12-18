@@ -136,7 +136,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
 
     {/* MOBILE */}
 
-    <div className="flex lg:hidden m-3 justify-between">
+    <div className="flex sticky lg:hidden m-3 justify-between">
     {menu ? <Close onClick={openMenu} className="cursor-pointer hover:opacity-60" fontSize="large"/> : <Menu onClick={openMenu} className="cursor-pointer hover:opacity-60" fontSize="large"/>}
     <AnimatePresence mode="wait">
     {menu ? <motion.div 
