@@ -15,7 +15,7 @@ export const Footer:React.FC<ComponentProps> = ({lenguage,menu}) => {
             </motion.div>
             <div className="flex flex-col gap-4 text-center">
                 <p className="lg:text-sm">{lenguage === "EN" ? "© Ulises Molina 2024" : "© Ulises Molina 2024"}</p>
-            <a href="mailto:ulisesmolinadev@gmail.com" className="lg:text-sm">ulisesmolinadev@gmail.com</a></div>
+            <a href="mailto:ulisesmolinadev@gmail.com" target="_blank" className="lg:text-sm">ulisesmolinadev@gmail.com</a></div>
         </footer>}
         </>
     )
