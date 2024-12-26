@@ -179,10 +179,10 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             {open && (
                 <motion.div
                 key="menu"
-                initial={{ opacity: 0, translateY: -50 }}
+                initial={{ opacity: 0, translateY: 50 }}
                 animate={{ opacity: 1, translateY: 0, transition: { duration: 1 } }}
-                exit={{ opacity: 0, translateY: -50, transition: { duration: 1 } }}
-                className="absolute w-48 h-36 bg-gray-400 rounded-lg top-14 right-0 z-10 flex"
+                exit={{ opacity: 0, translateY: 50, transition: { duration: 1 } }}
+                className="absolute w-48 h-36 bg-gray-400 rounded-lg -top-40 right-0 z-10 flex"
                 >
                 <ul className="flex flex-col w-full h-full">
                     <li className="text-2xl rounded-t-lg flex justify-center items-center gap-4 w-full h-full hover:cursor-pointer hover:bg-slate-500" onClick={changeToEnglish}>
