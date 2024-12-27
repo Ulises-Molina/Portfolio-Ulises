@@ -32,7 +32,8 @@ export const Contact:React.FC<ComponentProps> = ({lenguage,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3">
+                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3"
+                        loading="lazy">
         </motion.img>
         </a>
         <a href={"https://www.linkedin.com/in/ulises-molina-b7ab4b274/"} target="_blank">
@@ -48,7 +49,8 @@ export const Contact:React.FC<ComponentProps> = ({lenguage,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/linkedin.svg" alt="linkedin logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
+                        src="/logos/linkedin.svg" alt="linkedin logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
+                        loading="lazy">
         </motion.img>
         </a>
         <a href={"https://github.com/Ulises-Molina"} target="_blank">
@@ -64,7 +66,8 @@ export const Contact:React.FC<ComponentProps> = ({lenguage,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20">
+                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
+                        loading="lazy">
         </motion.img>
         </a>
         </div>

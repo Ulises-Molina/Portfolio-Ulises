@@ -1,17 +1,21 @@
 import {AnimatePresence, motion} from "motion/react"
 import { Logo } from "./Logo.tsx"
 import { ComponentProps } from "../types/types";
+import { Suspense } from "react";
+import React from "react";
+import { ProgressSpinner } from 'primereact/progressspinner';
+
+
+const LazyImage = React.lazy(() => import('./Image.tsx'));
 
 export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
         <>
         {menu ? null : <main id="home" className="w-screen flex flex-col lg:flex-row sm:min-h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
             <div className="w-1/2 flex justify-center items-center">
-                <motion.img
-                initial ={{ opacity: 0,translateX: -50, rotate: -5 }}
-                animate ={{ opacity: 1,translateX: 0, rotate: 0 }}
-                transition={{ duration: 1.5 }}
-                className="filter brightness-115 contrast-115 saturate-110 w-2/5 rounded-2xl min-h-56 min-w-56 lg:min-h-0 lg:min-w-0 center" src="/foto.webp" alt="foto de Ulises Molina"></motion.img>
+            <Suspense fallback={<ProgressSpinner/>}>    
+                <LazyImage/>
+            </Suspense>
             </div>
             <AnimatePresence mode="wait">
             <motion.div 
