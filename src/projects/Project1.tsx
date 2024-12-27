@@ -2,6 +2,10 @@ import { ComponentProps } from "../types/types"
 import Button from '@mui/material/Button'
 import { Logo } from "../components/Logo"
 import {AnimatePresence, motion} from "motion/react"
+import { Suspense } from "react"
+import React from "react"
+
+const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
@@ -14,8 +18,9 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
         whileHover={{ scale: 1.05}}
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px]  md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://organizarte.vercel.app/" target="_blank">
-            <motion.img 
-            src="/proyectos/organizarte.webp" loading="lazy" alt="gif proyecto Organizarte" className="w-full lg:h-full object-contain rounded-md shadow-slate-500"></motion.img>
+            <Suspense fallback={<div>Loading...</div>}>
+            <LazyProject src="/proyectos/organizarte.webp" alt="gif proyecto Organizarte"></LazyProject>
+            </Suspense>
             <span
             className="absolute flex justify-center items-center bg-gray-700 bg-opacity-15 w-full bottom-0 h-0 group-hover:h-1/3 transition-all duration-500 ease-in-out">
                 <p className="text-gray-900 z-30 text-lg opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>

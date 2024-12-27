@@ -6,7 +6,7 @@ import React from "react";
 import { ProgressSpinner } from 'primereact/progressspinner';
 
 
-const LazyImage = React.lazy(() => import('./Image.tsx'));
+const LazyImage: React.FC = React.lazy(() => import('./Image.tsx'));
 
 export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
