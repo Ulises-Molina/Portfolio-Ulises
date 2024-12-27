@@ -12,7 +12,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
         <>
         {menu ? null : <main id="home" className="w-screen flex flex-col lg:flex-row sm:min-h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
-            <div className="w-1/2 flex justify-center items-center">
+            <div className="hidden w-1/2 md:flex justify-center items-center">
             <Suspense fallback={<ProgressSpinner/>}>    
                 <LazyImage/>
             </Suspense>
