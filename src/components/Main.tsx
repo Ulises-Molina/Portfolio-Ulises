@@ -45,8 +45,8 @@ export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
                         <Logo src="/logos/git.svg" alt="logo Git" delay={0} y={5} x={5} link="https://github.com/Ulises-Molina"></Logo>
                         <Logo src="/logos/Github_light.svg" alt="logo Github" delay={1.2} y={10} x={5} link="https://github.com/Ulises-Molina"></Logo>
                         <Logo src="/logos/firebase.svg" alt="logo Firebase" delay={0.5} y={7} x={12} link="https://firebase.google.com/?hl=es-419"></Logo>
+                        <Logo src="/logos/postgresql.svg" alt="logo PostgreSQL" delay={1.4} y={8} x={5} link="https://www.postgresql.org/"></Logo>
                         <Logo src="/logos/postman.svg" alt="logo Postman" delay={0.9} y={13} x={9} link="https://www.postman.com/"></Logo>
-                        <Logo src="/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
                     </div>
                 </div>
             </motion.div>
