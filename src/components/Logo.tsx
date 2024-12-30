@@ -4,7 +4,7 @@ export const Logo = ({src,alt,delay,y,x,link}:{src:string,alt:string,delay:numbe
 
     return (
         <a href={link} target="_blank">
-            <motion.img
+            <motion.img id="logo"
                         animate={{
                             translateY: [0,-y , y , 0],
                             translateX: [0, x , 0]
