@@ -55,7 +55,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
 
     return (
 <>
-    <header className="hidden sticky top-0 w-screen h-24 lg:flex justify-between items-center px-16 backdrop-blur-sm">
+    <header className="hidden sticky top-0 w-screen h-24 lg:flex justify-between items-center px-16 backdrop-blur">
     <AnimatePresence mode="wait">
         <motion.ul
         key={lenguage}
