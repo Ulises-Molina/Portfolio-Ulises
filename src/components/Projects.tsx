@@ -4,6 +4,7 @@ import { Project2} from "../projects/Project2"
 import { Project3} from "../projects/Project3"
 import { Project4} from "../projects/Project4"
 import {AnimatePresence, motion} from "motion/react"
+import { Project5 } from "../projects/Project5"
 
 export const Projects:React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
@@ -16,8 +17,9 @@ export const Projects:React.FC<ComponentProps> = ({lenguage,menu}) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             className="text-3xl lg:text-4xl font-medium">{lenguage === "EN" ? "Projects" : "Proyectos"}</motion.h2>
-            <Project3 lenguage={lenguage} menu={menu}/>
+            <Project5 lenguage={lenguage} menu={menu}/>
             <Project1 lenguage={lenguage} menu={menu}/>
+            <Project3 lenguage={lenguage} menu={menu}/>
             <Project2 lenguage={lenguage} menu={menu}/>
             <Project4 lenguage={lenguage} menu={menu}/>
         </article>

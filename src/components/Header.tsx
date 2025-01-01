@@ -55,11 +55,11 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
 
     return (
 <>
-    <header className="hidden sticky top-0 w-screen h-24 lg:flex justify-between items-center px-16">
+    <header className="hidden sticky top-0 h-24 lg:flex justify-between items-center px-32">
     <AnimatePresence mode="wait">
         <motion.ul
         key={lenguage}
-        className="flex gap-20 text-lg">
+        className="flex gap-20 text-sm xl:text-lg">
             <li><motion.a
             initial={{ opacity: 0,translateY: -80 }}
             animate={{ opacity: 1, translateY : 0 }}
@@ -133,6 +133,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             {darkMode ? <LightMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/> : <DarkMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/>}
         </div>
     </header>
+
 
     {/* MOBILE */}
 

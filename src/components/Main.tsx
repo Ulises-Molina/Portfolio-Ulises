@@ -11,7 +11,7 @@ const LazyImage: React.FC = React.lazy(() => import('./Image.tsx'));
 export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
         <>
-        {menu ? null : <main id="home" className="w-screen flex flex-col lg:flex-row sm:min-h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
+        {menu ? null : <main id="home" className=" flex flex-col lg:flex-row sm:min-h-[90vh] lg:overflow-hidden lg:justify-normal gap-10 lg:gap-0 justify-center items-center">
             <div className="hidden w-1/2 md:flex justify-center items-center">
             <Suspense fallback={<ProgressSpinner/>}>    
                 <LazyImage/>
@@ -23,7 +23,7 @@ export const Main: React.FC<ComponentProps> = ({lenguage,menu}) => {
             initial ={{ opacity: 0,translateY: 50 }}
             animate ={{ opacity: 1,translateY: 0 }}
             transition={{ duration: 2.5 }}
-            className="lg:w-2/5 flex flex-col justify-center gap-3 lg:gap-7 self-start mx-8 lg:self-center">
+            className="lg:w-1/3 flex flex-col justify-center gap-3 lg:gap-7 self-start mx-8 lg:self-center">
                 <h1 className="text-2xl 2xl:text-4xl font-bold">{lenguage === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</h1>
                 <h2 className="2xl:text-xl text-lg font-bold">{lenguage === "EN" ? "I'm a Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</h2>
                 <p className="2xl:text-lg text-md">{lenguage === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</p>

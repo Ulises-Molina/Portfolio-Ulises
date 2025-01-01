@@ -19,12 +19,8 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px]  md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://organizarte.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject src="/proyectos/organizarte.webp" alt="gif proyecto Organizarte"></LazyProject>
+            <LazyProject id="project1" src="/proyectos/organizarte/home.png" src2="/proyectos/organizarte/category.png" src3="/proyectos/organizarte/delcategory.png" alt="gif proyecto Organizarte"></LazyProject>
             </Suspense>
-            <span
-            className="absolute flex justify-center items-center bg-gray-700 bg-opacity-15 w-full bottom-0 h-0 group-hover:h-1/3 transition-all duration-500 ease-in-out">
-                <p className="text-gray-900 z-30 text-lg opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>
-            </span>
             </a>
         </motion.div>
         <motion.div
@@ -33,7 +29,7 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md text-center xl:text-left text-balance">{lenguage === "EN" ? "''Organizarte''- Web management of tasks, with use and creation of categories, priority, search, filters and use of localStorage" : "''Organizarte'' - Web gestion de tareas, con uso y creacion de categorias, prioridad , buscador, filtros y uso de localStorage"}</p>
+            <p className="text-md lg:text-md">{lenguage === "EN" ? "''Organizarte''- Web management of tasks, with use and creation of categories, priority, search, filters and use of localStorage" : "''Organizarte'' - Web gestion de tareas, con uso y creacion de categorias, prioridad , buscador, filtros y uso de localStorage"}</p>
             <p className="text-md lg:text-md">Website : <a href="https://organizarte.vercel.app/" target="_blank" className="text-blue-600">https://organizarte.vercel.app</a></p>
             <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
             <div className="flex gap-10">

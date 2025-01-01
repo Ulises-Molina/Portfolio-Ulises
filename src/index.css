@@ -47,5 +47,23 @@ body {
 
 
 #logo {
-  will-change: transform,translate;
+    will-change: transform,translate;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+
+.carousel-indicators {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.carousel-inner {
+    border-radius: 5px;
+}
+
+
+
+

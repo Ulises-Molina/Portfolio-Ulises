@@ -19,12 +19,8 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
             <a href="https://mercado-sur.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject src="/proyectos/mercadosur-rec.webp" alt="gif proyecto MercadoSur"></LazyProject>
+            <LazyProject id="project3" src="/proyectos/mercadosur/home.png" src2="/proyectos/mercadosur/product.png" src3="/proyectos/mercadosur/buy.png"alt="gif proyecto MercadoSur"></LazyProject>
             </Suspense>
-            <span
-            className="absolute flex justify-center items-center bg-gray-700 bg-opacity-15 w-full bottom-0 h-0 group-hover:h-1/3 transition-all duration-500 ease-in-out">
-                <p className="text-gray-700 z-30 text-lg opacity-0 group-hover:opacity-80">{lenguage === "EN" ? "Go to the website" : "Ir al website"}</p>
-            </span>
             </a>
         </motion.div>
         <motion.div
@@ -33,7 +29,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md text-center xl:text-left text-balance">{lenguage === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como busqueda por categoria, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
+            <p className="text-md lg:text-md">{lenguage === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como busqueda por categoria, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
             <p className="text-md lg:text-md">Website : <a href="https://mercado-sur.vercel.app/" target="_blank" className="text-blue-600">https://mercado-sur.vercel.app/</a></p>
             <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
             <div className="flex gap-10">
