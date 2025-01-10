@@ -9,7 +9,7 @@ const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
-export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
+export const Project3:React.FC<ComponentProps> = ({lenguaje}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
@@ -24,14 +24,13 @@ export const Project3:React.FC<ComponentProps> = ({lenguage}) => {
             </a>
         </motion.div>
         <motion.div
-        key={lenguage}
+        key={lenguaje}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como busqueda por categoria, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
-            <p className="text-md lg:text-md">Website : <a href="https://mercado-sur.vercel.app/" target="_blank" className="text-blue-600">https://mercado-sur.vercel.app/</a></p>
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como búsqueda por categoría, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
             <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
                 <Logo src="/logos/css.svg" alt="logo Tailwind" delay={1} y={3} x={6} link="https://developer.mozilla.org/es/docs/Web/CSS"></Logo>

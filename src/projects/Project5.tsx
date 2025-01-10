@@ -9,7 +9,7 @@ const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
-export const Project5:React.FC<ComponentProps> = ({lenguage}) => {
+export const Project5:React.FC<ComponentProps> = ({lenguaje}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
@@ -24,14 +24,13 @@ export const Project5:React.FC<ComponentProps> = ({lenguage}) => {
             </a>
         </motion.div>
         <motion.div
-        key={lenguage}
+        key={lenguaje}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
-        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "''Eccomerce''- Eccommerce with registration and log in system with database. It has product searching and individual product pages, shopping cart and favorites." : "''Eccomerce'' - Eccomerce con sistema de register y log in con base de datos en PostgreSQL manejada con Prisma. Cuenta con searching de productos y paginas individuales de producto, carrito de compra y favoritos."}</p>
-            <p className="text-md lg:text-md">Website : <a href="https://mercado-sur.vercel.app/" target="_blank" className="text-blue-600">https://next-js-eccomerce-nine.vercel.app/</a></p>
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start">
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Ecommerce created with NextJS. Contains login and registration system with protected routes. Once logged in, the user has access to the /dashboard route where they can add products to favorites and/or to the shopping cart, also see their username and log out. In this project, a PostgreSQL database integration is carried out using Prisma to store users and their passwords to be able to authenticate them with NextAuth. Also encrypt passwords with BCrypt. Route navigation with NextJS File System Routing. The entire application is responsive, contains the best practices in terms of SEO and accessibility." : "E-Commerce creado con NextJS. Contiene sistema de log in y register con rutas protegidas. Una vez logeado el usuario tiene acceso a la ruta /dashboard donde puede agregar productos a favoritos y/o al carrito de compras, también ver su nombre de usuario y deslogearse. En este proyecto realice una integración de base de datos PostgreSQL mediante Prisma para almacenar los usuarios y sus contraseñas para poder autenticarlos con NextAuth. También encripte las contraseñas con BCrypt. Navegación de rutas con File System Routing de NextJS. Toda la aplicación es responsive, contiene las mejores practicas en cuanto a SEO y accesibilidad."}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
             <Logo src="/logos/nextjs_icon_dark.svg" alt="logo Next" delay={0} y={8} x={5} link="https://nextjs.org/"></Logo>
             <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={6} link="https://tailwindcss.com/"></Logo>

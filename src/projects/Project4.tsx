@@ -9,7 +9,7 @@ const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
-export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
+export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
@@ -24,14 +24,13 @@ export const Project4:React.FC<ComponentProps> = ({lenguage}) => {
             </a>
         </motion.div>
         <motion.div
-        key={lenguage}
+        key={lenguaje}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}  
         className="flex flex-col gap-6 lg:gap-6 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra"}</p>
-            <p className="text-md lg:text-md">Website : <a href="https://gallery-art-seven.vercel.app/" target="_blank" className="text-blue-600">https://gallery-art-seven.vercel.app</a></p>
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
                 <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
                 <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={10} link="https://tailwindcss.com/"></Logo>

@@ -30,12 +30,11 @@ export const Logo = ({
           repeatType: "mirror",
           repeat: Infinity,
           delay: delay
-        }}
-      >
+        }}>
         <img
           src={src}
           alt={alt}
-          className="lg:w-[45px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] min-w-10 max-w-10 filter drop-shadow-lg"
+          className="lg:w-[45px] lg:min-w-10 lg:max-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] min-w-8 max-w-8 filter drop-shadow-lg"
         />
       </motion.div>
     </a>

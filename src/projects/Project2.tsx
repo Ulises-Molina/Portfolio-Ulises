@@ -8,7 +8,7 @@ const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
-export const Project2:React.FC<ComponentProps> = ({lenguage}) => {
+export const Project2:React.FC<ComponentProps> = ({lenguaje}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
@@ -23,14 +23,13 @@ export const Project2:React.FC<ComponentProps> = ({lenguage}) => {
             </a>
         </motion.div>
         <motion.div
-        key={lenguage}
+        key={lenguaje}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} 
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "''Porfolio'' Discover the art of Marisol Arancibia in works and exhibitions. Personal portfolio designed and developed on request" : "''Porfolio'' - Descubre el arte de Marisol Arancibia en obras y exposiciones. Porfolio personal diseñado y desarrollado a pedido"}</p>
-            <p className="text-md lg:text-md">Website : <a href="https://aransol.vercel.app/" target="_blank" className="text-blue-600">https://aransol.vercel.app</a></p>
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "''Porfolio'' Discover the art of Marisol Arancibia in works and exhibitions. Personal portfolio designed and developed on request" : "''Porfolio'' - Descubre el arte de Marisol Arancibia en obras y exposiciones. Porfolio personal diseñado y desarrollado a pedido"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
                 <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
                 <Logo src="/logos/typescript.svg" alt="logo Typescript" delay={0.5} y={8} x={5} link="https://www.typescriptlang.org/"></Logo>

@@ -6,7 +6,7 @@ import { ComponentProps } from "../types/types";
 
 const body = document.getElementById('body');
 
-export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,setMenu}) => {
+export const Header: React.FC<ComponentProps> = ({lenguaje, setLenguaje,menu,setMenu}) => {
 
     const [darkMode, setDarkMode] = useState<boolean>(true)
     const [open, setOpen] = useState<boolean>(false)
@@ -40,25 +40,25 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
     }
     
     const changeToSpanish = ():void => {
-        if (setLenguage) {
-            setLenguage("ES");
+        if (setLenguaje) {
+            setLenguaje("ES");
         }
         setOpen(false);
     }
 
     const changeToEnglish = ():void => {
-        if (setLenguage) {
-            setLenguage("EN");
+        if (setLenguaje) {
+            setLenguaje("EN");
         }
         setOpen(false);
     }
 
     return (
 <>
-    <header className="hidden sticky top-0 h-24 lg:flex justify-between items-center px-32">
+    <header className="hidden sticky top-0 h-24 lg:flex justify-between items-center px-32 z-20">
     <AnimatePresence mode="wait">
         <motion.ul
-        key={lenguage}
+        key={lenguaje}
         className="flex gap-20 text-sm xl:text-lg">
             <li><motion.a
             initial={{ opacity: 0,translateY: -80 }}
@@ -66,7 +66,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             transition={{ duration: 0.1 }}
             exit={{ opacity: 0 }}
             href="#home" className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Home" : "Inicio"}
+                    {lenguaje === "EN" ? "Home" : "Inicio"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
             </motion.a>
             </li>
@@ -76,7 +76,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             transition={{ duration: 0.1 }}
             exit={{ opacity: 0 }} 
             href="#projects" className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Projects" : "Proyectos"}
+                    {lenguaje === "EN" ? "Projects" : "Proyectos"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
             </motion.a>
             </li>
@@ -86,7 +86,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             transition={{ duration: 0.1 }}
             exit={{ opacity: 0 }} 
             href="#about" className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "About me" : "Sobre mi"}
+                    {lenguaje === "EN" ? "About me" : "Sobre mi"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
             </motion.a>
             </li>
@@ -97,7 +97,7 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             transition={{ duration: 0.1 }}
             exit={{ opacity: 0 }}
             href="#contact" className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Contact" : "Contacto"}
+                    {lenguaje === "EN" ? "Contact" : "Contacto"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
             </motion.a>
             </li>
@@ -150,24 +150,24 @@ export const Header: React.FC<ComponentProps> = ({lenguage, setLenguage,menu,set
             <li>
                 <motion.a onClick={openMenu}
             href="#home" className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Home" : "Inicio"}
+                    {lenguaje === "EN" ? "Home" : "Inicio"}
                     <span className="absolute left-0 -bottom-1 w-0 min-h-[1px] bg-slate-300 transition-all duration-500 group-hover:w-full"></span>
             </motion.a></li>
             <li>
                 <a href="#projects" onClick={openMenu} className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Projects" : "Proyectos"}
+                    {lenguaje === "EN" ? "Projects" : "Proyectos"}
                     <span className="absolute left-0 -bottom-1 w-0 min-h-[1px] bg-slate-300 transition-all duration-500 group-hover:w-full"></span>
             </a>
             </li>
             <li>
                 <a href="#about" onClick={openMenu} className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "About me" : "Sobre mi"}
+                    {lenguaje === "EN" ? "About me" : "Sobre mi"}
                     <span className="absolute left-0 -bottom-1 w-0 min-h-[1px] bg-slate-300 transition-all duration-500 group-hover:w-full"></span>
             </a>
             </li>
             <li>
                 <a href="#contact" onClick={openMenu} className="relative group transition-all duration-500 hover:opacity-70">
-                    {lenguage === "EN" ? "Contact" : "Contacto"}
+                    {lenguaje === "EN" ? "Contact" : "Contacto"}
                     <span className="absolute left-0 -bottom-1 w-0 min-h-[1px] bg-slate-300 transition-all duration-500 group-hover:w-full"></span>
             </a>
             </li>

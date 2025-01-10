@@ -3,21 +3,21 @@ import { ComponentProps } from "../types/types";
 import {motion} from "motion/react"
 
 
-export const Contact:React.FC<ComponentProps> = ({lenguage,menu}) => {
+export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     return (
     <>
     {menu ? null : <AnimatePresence mode="wait">
     <motion.section
     id="contact"
-    key={lenguage}
+    key={lenguaje}
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }} 
     className="flex flex-col lg:min-h-[80vh] items-center mt-32 md:mt-72 lg:mt-72 xl:mt-32 gap-6 lg:gap-32 mb-20">
         <h2
-        className="text-3xl lg:text-4xl font-medium">{lenguage === "EN" ? "Contact me" : "Contacto"}</h2>
+        className="text-3xl lg:text-4xl font-medium">{lenguaje === "EN" ? "Contact me" : "Contacto"}</h2>
         <div className="flex flex-col gap-28 mt-28">
-            <h3 className="text-lg text-center">{lenguage === "EN" ? "You can contact me on" : "Contactame en "}</h3>
+            <h3 className="text-lg text-center">{lenguaje === "EN" ? "You can contact me on" : "Contactame en "}</h3>
             <div className="flex flex-col lg:flex-row lg:gap-64 gap-28 justify-center items-center">
             <a href={"mailto:ulisesmolinadev@gmail.com"} target="_blank">
             <motion.img

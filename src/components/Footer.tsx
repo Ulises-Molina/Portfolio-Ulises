@@ -2,7 +2,7 @@ import { ComponentProps } from "../types/types"
 import { KeyboardArrowUp } from "@mui/icons-material"
 import { motion } from "motion/react"
 
-export const Footer:React.FC<ComponentProps> = ({lenguage,menu}) => {
+export const Footer:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     return (
         <>
         {menu ? null : <footer className="flex flex-row items-center gap-4 py-3 border-t border-gray-600 justify-center relative">
@@ -14,7 +14,7 @@ export const Footer:React.FC<ComponentProps> = ({lenguage,menu}) => {
             <KeyboardArrowUp fontSize="large"></KeyboardArrowUp>
             </motion.div>
             <div className="flex flex-col gap-4 text-center">
-                <p className="lg:text-sm">{lenguage === "EN" ? "© Ulises Molina 2024" : "© Ulises Molina 2024"}</p>
+                <p className="lg:text-sm">{lenguaje === "EN" ? "© Ulises Molina 2024" : "© Ulises Molina 2024"}</p>
             <a href="mailto:ulisesmolinadev@gmail.com" target="_blank" className="lg:text-sm">ulisesmolinadev@gmail.com</a></div>
         </footer>}
         </>

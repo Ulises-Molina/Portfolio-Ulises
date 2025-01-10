@@ -9,7 +9,7 @@ const LazyProject = React.lazy(() => import('./LazyProject'));
 
 
 
-export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
+export const Project1:React.FC<ComponentProps> = ({lenguaje}) => {
     return (
         <AnimatePresence mode="wait">
         <motion.section
@@ -24,14 +24,13 @@ export const Project1:React.FC<ComponentProps> = ({lenguage}) => {
             </a>
         </motion.div>
         <motion.div
-        key={lenguage}
+        key={lenguaje}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "''Organizarte''- Web management of tasks, with use and creation of categories, priority, search, filters and use of localStorage" : "''Organizarte'' - Web gestion de tareas, con uso y creacion de categorias, prioridad , buscador, filtros y uso de localStorage"}</p>
-            <p className="text-md lg:text-md">Website : <a href="https://organizarte.vercel.app/" target="_blank" className="text-blue-600">https://organizarte.vercel.app</a></p>
-            <p className="text-md lg:text-md">{lenguage === "EN" ? "Technologies used" : "Tecnologias usadas"}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Task management system with filter by category, priority and search. Form to add or delete categories that are displayed in a sidebar to filter tasks. Use of LocalStorage to store tasks and be able to display them even when closing and opening the browser." : "Sistema de gestión de tareas con filtro por categorías, prioridad y búsqueda. Formulario para agregar o eliminar categorías que se muestran en una sidebar para filtrar las tareas. Uso de LocalStorage para almacenar las tareas y poder mostrarlas incluso cerrando y abriendo el navegador."}</p>
+            <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
                 <Logo src="/logos/react.svg" alt="logo React" delay={0} y={8} x={5} link="https://es.react.dev/"></Logo>
                 <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={3} x={10} link="https://tailwindcss.com/"></Logo>

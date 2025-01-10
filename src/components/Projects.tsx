@@ -6,22 +6,22 @@ import { Project4} from "../projects/Project4"
 import {AnimatePresence, motion} from "motion/react"
 import { Project5 } from "../projects/Project5"
 
-export const Projects:React.FC<ComponentProps> = ({lenguage,menu}) => {
+export const Projects:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     return (
     <>
     {menu ? null : <AnimatePresence mode="wait">
         <article id="projects" className="flex flex-col overflow-hidden items-center mt-32 gap-24 lg:gap-64">
             <motion.h2
-            key={lenguage}
+            key={lenguaje}
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className="text-3xl lg:text-4xl font-medium">{lenguage === "EN" ? "Projects" : "Proyectos"}</motion.h2>
-            <Project5 lenguage={lenguage} menu={menu}/>
-            <Project1 lenguage={lenguage} menu={menu}/>
-            <Project3 lenguage={lenguage} menu={menu}/>
-            <Project2 lenguage={lenguage} menu={menu}/>
-            <Project4 lenguage={lenguage} menu={menu}/>
+            className="text-3xl lg:text-4xl font-medium">{lenguaje === "EN" ? "Projects" : "Proyectos"}</motion.h2>
+            <Project5 lenguaje={lenguaje} menu={menu}/>
+            <Project1 lenguaje={lenguaje} menu={menu}/>
+            <Project3 lenguaje={lenguaje} menu={menu}/>
+            <Project2 lenguaje={lenguaje} menu={menu}/>
+            <Project4 lenguaje={lenguaje} menu={menu}/>
         </article>
         </AnimatePresence>}
     </>
