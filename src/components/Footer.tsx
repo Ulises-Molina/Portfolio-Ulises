@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 export const Footer:React.FC<ComponentProps> = ({lenguage,menu}) => {
     return (
         <>
-        {menu ? null : <footer className="flex flex-row items-center gap-4 lg:py-5 py-5 border-t border-gray-600 justify-center relative">
+        {menu ? null : <footer className="flex flex-row items-center gap-4 py-3 border-t border-gray-600 justify-center relative">
             <motion.div 
         whileHover={{ scale: 1.1, backgroundColor: '#3d3d3d' }}
         whileTap={{ scale: 0.6 }}
