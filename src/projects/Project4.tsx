@@ -16,7 +16,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
         className="flex flex-col xl:flex-row xl:max-h-[300px] mx-3 gap-16 xl:gap-32 justify-center items-center xl:items-start xl:mb-16">
         <motion.div 
         whileHover={{ scale: 1.05}}
-        className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
+        className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://gallery-art-seven.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>} >
             <LazyProject id="project4" src="/proyectos/galleryart/home.png" src2="/proyectos/galleryart/work2.png" src3="/proyectos/galleryart/work.png" alt="gif proyecto Gallery Art"></LazyProject>

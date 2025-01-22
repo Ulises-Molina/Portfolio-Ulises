@@ -5,17 +5,17 @@ import { motion } from "motion/react"
 export const Footer:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     return (
         <>
-        {menu ? null : <footer className="flex flex-row items-center gap-4 py-3 border-t border-gray-600 justify-center relative">
+        {menu ? null : <footer className="relative flex flex-row items-center justify-center gap-4 py-5 border-t border-gray-600">
             <motion.div 
         whileHover={{ scale: 1.1, backgroundColor: '#3d3d3d' }}
         whileTap={{ scale: 0.6 }}
-        className="bottom-6 -left-52 lg:left-16 absolute lg:h-12 lg:w-12 justify-center items-center text-white cursor-pointer border rounded-full hidden sm:flex"
+        className="absolute items-center justify-center hidden text-white border rounded-full cursor-pointer bottom-6 -left-52 lg:left-16 lg:h-12 lg:w-12 sm:flex"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <KeyboardArrowUp fontSize="large"></KeyboardArrowUp>
             </motion.div>
             <div className="flex flex-col gap-4 text-center">
-                <p className="lg:text-sm">{lenguaje === "EN" ? "© Ulises Molina 2024" : "© Ulises Molina 2024"}</p>
-            <a href="mailto:ulisesmolinadev@gmail.com" target="_blank" className="lg:text-sm">ulisesmolinadev@gmail.com</a></div>
+                <p className="lg:text-sm">{lenguaje === "EN" ? "© Ulises Molina 2025" : "© Ulises Molina 2025"}</p>
+            </div>
         </footer>}
         </>
     )

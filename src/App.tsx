@@ -5,6 +5,7 @@ import { Projects } from "./components/Projects.tsx"
 import { Contact } from "./components/Contact.tsx"
 import { About } from "./components/About.tsx"
 import { Footer } from "./components/Footer.tsx"
+import { Analytics } from "@vercel/analytics/react"
 
 
 export const App: React.FC = () => {
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
     <About lenguaje={lenguaje} menu={menu}/>
     <Contact lenguaje={lenguaje} menu={menu}/>
     <Footer lenguaje={lenguaje} menu={menu}/>
+    <Analytics/>
     </>
   )
 }

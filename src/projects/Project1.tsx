@@ -16,10 +16,10 @@ export const Project1:React.FC<ComponentProps> = ({lenguaje}) => {
         className="flex flex-col xl:flex-row xl:max-h-[300px] gap-16 mx-3 lg:gap-32 justify-center items-center xl:items-start">
         <motion.div 
         whileHover={{ scale: 1.05}}
-        className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px]  md:max-w-[700px] relative group transition-all duration-500 overflow-hidden">
+        className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px]  md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://organizarte.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject id="project1" src="/proyectos/organizarte/home.png" src2="/proyectos/organizarte/category.png" src3="/proyectos/organizarte/delcategory.png" alt="gif proyecto Organizarte"></LazyProject>
+            <LazyProject id="project1" src="/proyectos/organizarte/home.png" src2="/proyectos/organizarte/category.png" src3="/proyectos/organizarte/delcategory.png" alt="gif proyecto Organizarte" delay={2}></LazyProject>
             </Suspense>
             </a>
         </motion.div>
@@ -38,7 +38,7 @@ export const Project1:React.FC<ComponentProps> = ({lenguaje}) => {
                 <Logo src="/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
             </div>
             <a href="https://github.com/Ulises-Molina/Organizarte" target="_blank">
-            <Button variant="outlined" color="inherit" className="w-38 lg:w-48 scale-75 lg:scale-75 hover:bg-slate-700">GitHub repo</Button>
+            <Button variant="outlined" color="inherit" className="scale-75 w-38 lg:w-48 lg:scale-75 hover:bg-slate-700">GitHub repo</Button>
             </a>
         </motion.div>
     </motion.section>

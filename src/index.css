@@ -18,6 +18,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('/fonts/montserrat/Montserrat-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -30,17 +38,21 @@ body {
 }
 
 
+
+
 .dark-mode {
-    background-color : #373743;
-    background-image: url("/pattern-randomized1.svg");
+    background-image: url("/screen.webp");
+    background-size: contain;
+    background-position: center;
     color: #d7d7e0;
     transition: color 0.5s ease;
     transition: background-color 0.5s ease-in-out;
 }
 
 .light-mode {
-    background-image: url("/pattern-randomizedligth.svg");
-    background-color: #b5b6c4;
+    background-image: url("/screenlight.webp");
+    background-size: cover;
+    background-position: center;
     color: #373743;
     transition: color 0.5s ease-in-out;
     transition: background-color 0.5s ease;
