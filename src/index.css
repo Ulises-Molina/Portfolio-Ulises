@@ -41,7 +41,7 @@ body {
 
 
 .dark-mode {
-    background-image: url("/screen.webp");
+    background-image: url("/screen.jph");
     background-size: contain;
     background-position: center;
     color: #d7d7e0;
@@ -50,7 +50,7 @@ body {
 }
 
 .light-mode {
-    background-image: url("/screenlight.webp");
+    background-image: url("/screenlight.jpg");
     background-size: cover;
     background-position: center;
     color: #373743;
