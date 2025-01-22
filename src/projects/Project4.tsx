@@ -19,7 +19,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://gallery-art-seven.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>} >
-            <LazyProject id="project4" src="/proyectos/galleryart/home.png" src2="/proyectos/galleryart/work2.png" src3="/proyectos/galleryart/work.png" alt="gif proyecto Gallery Art"></LazyProject>
+            <LazyProject id="project4" src="/proyectos/galleryart/home.png" src2="/proyectos/galleryart/work2.png" src3="/proyectos/galleryart/work.png" alt="gif proyecto Gallery Art" delay={2}></LazyProject>
             </Suspense>
             </a>
         </motion.div>
@@ -38,7 +38,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
                 <Logo src="/logos/materialui.svg" alt="logo Material" delay={1.4} y={8} x={5} link="https://mui.com/"></Logo>
             </div>
             <a href="https://github.com/Ulises-Molina/GalleryArt" target="_blank">
-            <Button variant="outlined" color="inherit" className="w-38 lg:w-48 scale-75 hover:bg-slate-700">GitHub repo</Button>
+            <Button variant="outlined" color="inherit" className="scale-75 w-38 lg:w-48 hover:bg-slate-700">GitHub repo</Button>
             </a>
         </motion.div>
     </motion.section>
