@@ -25,7 +25,7 @@ export const Main: React.FC<ComponentProps> = ({lenguaje,menu}) => {
             transition={{ duration: 2.5 }}
             className="flex flex-col self-start justify-center gap-3 mx-8 lg:w-1/3 lg:gap-7 lg:self-center">
                 <h1 className="text-2xl font-black 2xl:text-4xl">{lenguaje === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</h1>
-                <h2 className="text-lg font-black 2xl:text-xl">{lenguaje === "EN" ? "I'm a Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</h2>
+                <h2 className="text-lg font-black 2xl:text-xl">{lenguaje === "EN" ? "Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</h2>
                 <p className="font-light 2xl:text-lg text-md">{lenguaje === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</p>
                 <div className="flex flex-col gap-10 mt-10 ">
                     <p className="2xl:text-xl text-md">{lenguaje === "EN" ? "Principal technologies" : "Tecnologías principales"}</p>
