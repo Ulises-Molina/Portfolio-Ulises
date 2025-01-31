@@ -28,7 +28,7 @@ export const Project1:React.FC<ComponentProps> = ({lenguaje}) => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Task management system with filter by category, priority and search. Form to add or delete categories that are displayed in a sidebar to filter tasks. Use of LocalStorage to store tasks and be able to display them even when closing and opening the browser." : "Sistema de gestión de tareas con filtro por categorías, prioridad y búsqueda. Formulario para agregar o eliminar categorías que se muestran en una sidebar para filtrar las tareas. Uso de LocalStorage para almacenar las tareas y poder mostrarlas incluso cerrando y abriendo el navegador."}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
