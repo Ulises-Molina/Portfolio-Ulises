@@ -41,18 +41,16 @@ body {
 
 
 .dark-mode {
-    background-image: url("/screen.jpg");
-    background-size: contain;
-    background-position: center;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
     color: #d7d7e0;
     transition: color 0.5s ease;
     transition: background-color 0.5s ease-in-out;
 }
 
 .light-mode {
-    background-image: url("/screen-light.svg");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
     color: #373743;
     transition: color 0.5s ease-in-out;
     transition: background-color 0.5s ease;
