@@ -18,7 +18,7 @@ export const Project2:React.FC<ComponentProps> = ({lenguaje}) => {
         className="hover:cursor-pointer md:min-w-[600px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://aransol.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject id="project2" src="/proyectos/aransol/home.png" src2="/proyectos/aransol/2.png" src3="/proyectos/aransol/3.png" alt="gif proyecto Porfolio" delay={4}></LazyProject>
+            <LazyProject id="project2" src="/proyectos/aransol/home.png" src2="/proyectos/aransol/2.png" src3="/proyectos/aransol/3.png" alt="gif proyecto Porfolio"></LazyProject>
             </Suspense>
             </a>
         </motion.div>
