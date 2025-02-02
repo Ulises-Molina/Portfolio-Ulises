@@ -19,7 +19,7 @@ export const Project5:React.FC<ComponentProps> = ({lenguaje}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://next-js-eccomerce-nine.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject id="project5" src="/proyectos/eccomerce-next/home.png" src2="/proyectos/eccomerce-next/register.png" src3="/proyectos/eccomerce-next/dashboard.png" alt="proyecto Eccomerce" delay={.5}></LazyProject>
+            <LazyProject id="project5" src="/proyectos/eccomerce-next/home.png" src2="/proyectos/eccomerce-next/register.png" src3="/proyectos/eccomerce-next/dashboard.png" alt="proyecto Eccomerce"></LazyProject>
             </Suspense>
             </a>
         </motion.div>
