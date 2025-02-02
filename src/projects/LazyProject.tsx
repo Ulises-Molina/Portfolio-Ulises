@@ -20,7 +20,6 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             }}
             transition={{
                 duration: 4,
-                delay: 1, // Tiempo total de la animación
                 ease: "easeInOut", // Movimiento suave
             }}
             viewport={{ once: true }} // Hace que la animación ocurra solo una vez al entrar en el viewport
