@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const LazyProject = ({ id, src, src2, src3, alt, delay }: { id: string; src: string; src2: string; src3: string; alt: string; delay: number }) => {
+const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; src2: string; src3: string; alt: string }) => {
     return (
         <motion.div
             id={id}
