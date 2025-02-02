@@ -19,7 +19,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguaje}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://mercado-sur.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject id="project3" src="/proyectos/mercadosur/home.png" src2="/proyectos/mercadosur/product.png" src3="/proyectos/mercadosur/buy.png"alt="gif proyecto MercadoSur" delay={.5}></LazyProject>
+            <LazyProject id="project3" src="/proyectos/mercadosur/home.png" src2="/proyectos/mercadosur/product.png" src3="/proyectos/mercadosur/buy.png"alt="gif proyecto MercadoSur"></LazyProject>
             </Suspense>
             </a>
         </motion.div>
