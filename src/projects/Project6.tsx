@@ -19,7 +19,7 @@ export const Project6:React.FC<ComponentProps> = ({lenguaje}) => {
         className="hover:cursor-pointer md:min-w-[550px] xl:min-w-[700px] md:max-w-[700px] relative group transition-all duration-500 overflow-hidden p-14">
             <a href="https://marketcrypto-psi.vercel.app/" target="_blank">
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject id="project6" src="/proyectos/marketcrypto/screen.png" src2="/proyectos/marketcrypto/market.png" src3="/proyectos/marketcrypto/features.png" alt="proyecto MarketCrypto" delay={2}></LazyProject>
+            <LazyProject id="project6" src="/proyectos/marketcrypto/screen.png" src2="/proyectos/marketcrypto/market.png" src3="/proyectos/marketcrypto/features.png" alt="proyecto MarketCrypto"></LazyProject>
             </Suspense>
             </a>
         </motion.div>
