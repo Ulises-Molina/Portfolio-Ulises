@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const LazyProject = ({ id, src, src2, src3, alt,delay }: { id: string; src: string; src2: string; src3: string; alt: string;delay : number }) => {
+const LazyProject = ({ id, src, src2, src3, alt, delay }: { id: string; src: string; src2: string; src3: string; alt: string; delay: number }) => {
     return (
         <motion.div
             id={id}
@@ -8,18 +8,22 @@ const LazyProject = ({ id, src, src2, src3, alt,delay }: { id: string; src: stri
             style={{
                 perspective: "1000px", // Efecto 3D realista
             }}
-            animate={{
+            initial = {{
+                opacity : 0
+            }
+            }
+            whileInView={{
                 scale: [1, 0.70, 0.70, 1], 
                 rotateX: [0, 40, -40, 0], 
                 rotateY: [0, 180, 360], 
+                opacity : 1,
             }}
             transition={{
                 duration: 4,
-                delay: delay, // Tiempo total de la animación
-                repeat: Infinity, // Repetición infinita
-                repeatDelay: 5, // Pausa entre repeticiones
+                delay: 1, // Tiempo total de la animación
                 ease: "easeInOut", // Movimiento suave
             }}
+            viewport={{ once: true }} // Hace que la animación ocurra solo una vez al entrar en el viewport
         >
             <div
                 className="carousel-inner"
@@ -55,5 +59,3 @@ const LazyProject = ({ id, src, src2, src3, alt,delay }: { id: string; src: stri
 };
 
 export default LazyProject;
-
-
