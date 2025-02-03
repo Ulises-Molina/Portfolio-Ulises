@@ -5,9 +5,6 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
         <motion.div
             id={id}
             className="carousel slide"
-            style={{
-                perspective: "1000px",
-            }}
             initial={{
                 opacity: 0, 
                 x: -200,
@@ -20,15 +17,12 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             }}
             transition={{
                 duration: 4,
-                ease: "easeInOut", // Movimiento suave
+                ease: "easeInOut",
             }}
-            viewport={{ once: true }} // Hace que la animación ocurra solo una vez al entrar en el viewport
+            viewport={{ once: true }}
         >
             <div
                 className="carousel-inner"
-                style={{
-                    transformStyle: "preserve-3d", // Preserva el efecto 3D
-                }}
             >
                 <div className="carousel-item active">
                     <img src={src} className="d-block w-100" alt={alt} />
