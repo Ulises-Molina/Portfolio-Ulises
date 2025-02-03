@@ -6,17 +6,17 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             id={id}
             className="carousel slide"
             style={{
-                perspective: "1000px", // Efecto 3D realista
+                perspective: "1000px",
             }}
-            initial = {{
-                opacity : 0
-            }
-            }
+            initial={{
+                opacity: 0, 
+                x: -200,
+                scale: 0,7
+            }}
             whileInView={{
-                scale: [1, 0.70, 0.70, 1], 
-                rotateX: [0, 40, -40, 0], 
-                rotateY: [0, 180, 360], 
-                opacity : 1,
+                opacity: 1, 
+                x: 0, 
+                scale: 1
             }}
             transition={{
                 duration: 4,
@@ -58,3 +58,4 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
 };
 
 export default LazyProject;
+
