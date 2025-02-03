@@ -25,9 +25,11 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
         </motion.div>
         <motion.div
         key={lenguaje}
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}  
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 4,
+                delay: 0.5,
+                ease: "easeInOut"}}
         className="flex flex-col gap-6 lg:gap-6 max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
