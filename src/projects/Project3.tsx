@@ -25,11 +25,11 @@ export const Project3:React.FC<ComponentProps> = ({lenguaje}) => {
         </motion.div>
         <motion.div
         key={lenguaje}
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 4,
-                delay: 0.5,
-                ease: "easeInOut"}} 
+        initial={{ opacity: 0, x: 300,scale:0.3 }}
+        whileInView={{ opacity: 1, x: 0,scale:1 }}
+        transition={{ duration: 3,
+                ease: "easeInOut"}}
+                viewport={{ once: true }}
         className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como búsqueda por categoría, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>

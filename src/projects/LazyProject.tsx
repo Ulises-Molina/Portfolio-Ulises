@@ -7,7 +7,7 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             className="carousel slide"
             initial={{
                 opacity: 0, 
-                x: -200,
+                x: -300,
                 scale: 0.3
             }}
             whileInView={{
@@ -16,8 +16,8 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
                 scale: 1
             }}
             transition={{
-                duration: 4,
-                delay: 0.5,
+                duration: 3,
+                delay: 0.3,
                 ease: "easeInOut",
             }}
             viewport={{ once: true }}

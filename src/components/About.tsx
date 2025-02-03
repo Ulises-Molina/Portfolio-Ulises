@@ -14,8 +14,10 @@ export const About:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }} 
     className="flex flex-col xl:h-[120vh] 2xl:min-h-[80vh] mt-16 md:mt-72 lg:mt-16 gap-24 lg:gap-32 justify-center items-center">
-        <h3 className="text-3xl lg:text-4xl font-medium">{lenguaje === "EN" ? "About me" : "Sobre mi"}</h3>
-        <div className="flex flex-col lg:w-1/3 border-gray-500 border-2 p-8 rounded-lg gap-20 shadow-lg">
+        <h3 className="text-3xl font-medium lg:text-4xl">{lenguaje === "EN" ? "About me" : "Sobre mi"}</h3>
+        <motion.div initial={{ opacity: 0, x: 250 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration:3, ease: 'easeOut', delay: 0 }} className="flex flex-col gap-20 p-8 border-2 border-gray-500 rounded-lg shadow-lg lg:w-1/3">
             {lenguaje === "ES" ? <p className="text:lg lg:text-md">Busco adentrarme en el mundo IT como desarrollador frontend, soy una persona motivada a crecer, aprender y
 desarrollarme en distintas áreas. <br></br><br></br>Me considero
 responsable, dinámico, creativo y confiable con
@@ -31,9 +33,9 @@ team.<br></br><br></br>
 I have experience in customer service and managing work groups. 
 I am 24 years old and I live in Tigre, Buenos Aires.</p>}
         <a href="/Cv.Ulises.pdf" target="_blank" rel="noopener noreferrer" className="self-center mb-8">
-            <Button variant="outlined" color="inherit" size="medium" className="w-38 lg:w-48 scale-75 hover:bg-slate-700 self-center">Curriculum</Button>
+            <Button variant="outlined" color="inherit" size="medium" className="self-center scale-75 w-38 lg:w-48 hover:bg-slate-700">Curriculum</Button>
             </a>
-        </div>
+        </motion.div>
     </motion.section>
     </AnimatePresence>}
         </>

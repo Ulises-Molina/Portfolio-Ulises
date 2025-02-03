@@ -58,52 +58,40 @@ export const Header: React.FC<ComponentProps> = ({lenguaje, setLenguaje,menu,set
     <header id="header" className="sticky top-0 z-20 items-center justify-center hidden h-24 px-32 gap-[650px] lg:flex">
     <AnimatePresence mode="wait">
         <motion.ul
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
-        key={lenguaje}
         className="flex gap-20 text-sm xl:text-lg">
-            <li><motion.a
-            initial={{ opacity: 0,translateY: -80 }}
-            animate={{ opacity: 1, translateY : 0 }}
-            transition={{ duration: 0.1 }}
-            exit={{ opacity: 0 }}
+            <motion.li  initial={{ opacity: 0, x: -150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: 'easeOut', delay: 0.9 }}><a
             href="#home" className="relative transition-all duration-500 group hover:opacity-70">
                     {lenguaje === "EN" ? "Home" : "Inicio"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
-            </motion.a>
-            </li>
-            <li><motion.a
-            initial={{ opacity: 0,translateY: -80 }}
-            animate={{ opacity: 1, translateY : 0 }}
-            transition={{ duration: 0.1 }}
-            exit={{ opacity: 0 }} 
+            </a>
+            </motion.li>
+            <motion.li  initial={{ opacity: 0, x: -150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: 'easeOut', delay: 0.6 }}><a
             href="#projects" className="relative transition-all duration-500 group hover:opacity-70">
                     {lenguaje === "EN" ? "Projects" : "Proyectos"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
-            </motion.a>
-            </li>
-            <li><motion.a
-            initial={{ opacity: 0,translateY: -80 }}
-            animate={{ opacity: 1 , translateY : 0}}
-            transition={{ duration: 0.1 }}
-            exit={{ opacity: 0 }} 
+            </a>
+            </motion.li>
+            <motion.li  initial={{ opacity: 0, x: -150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: 'easeOut', delay: 0.3 }}><a
             href="#about" className="relative transition-all duration-500 group hover:opacity-70">
                     {lenguaje === "EN" ? "About me" : "Sobre mi"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
-            </motion.a>
-            </li>
-            <li>
-                <motion.a 
-            initial={{ opacity: 0,translateY: -80 }}
-            animate={{ opacity: 1, translateY : 0 }}
-            transition={{ duration: 0.1 }}
-            exit={{ opacity: 0 }}
+            </a>
+            </motion.li>
+            <motion.li  initial={{ opacity: 0, x: -150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: 'easeOut', delay: 0 }}>
+                <a 
             href="#contact" className="relative transition-all duration-500 group hover:opacity-70">
                     {lenguaje === "EN" ? "Contact" : "Contacto"}
                     <span className={`absolute left-0 -bottom-1 w-0 min-h-[1px] transition-all duration-500 group-hover:w-full ${darkMode ? 'bg-slate-300' : 'bg-slate-600'}`}></span>
-            </motion.a>
-            </li>
+            </a>
+            </motion.li>
         </motion.ul>
     </AnimatePresence>
         <motion.div
