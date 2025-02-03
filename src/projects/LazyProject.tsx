@@ -17,6 +17,7 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             }}
             transition={{
                 duration: 4,
+                delay: 0.5,
                 ease: "easeInOut",
             }}
             viewport={{ once: true }}
