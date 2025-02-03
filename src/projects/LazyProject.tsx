@@ -8,7 +8,7 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
             initial={{
                 opacity: 0, 
                 x: -200,
-                scale: 0,7
+                scale: 0.7
             }}
             whileInView={{
                 opacity: 1, 
