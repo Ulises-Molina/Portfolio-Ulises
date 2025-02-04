@@ -25,7 +25,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
         </motion.div>
         <motion.div
         key={lenguaje}
-        initial={{ opacity: 0, x: 300,scale:0.3 }}
+        initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : 300,scale:0.3 }}
         whileInView={{ opacity: 1, x: 0,scale:1 }}
         transition={{ duration: 3,
                 ease: "easeInOut"}}
