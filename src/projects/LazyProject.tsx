@@ -4,7 +4,7 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
     return (
         <motion.div
             id={id}
-            className="carousel slide"
+            className="carousel slide min-w-[350px]"
             initial={{
                 opacity: window.innerWidth < 600 ? 1 : 0, 
                 x: window.innerWidth < 600 ? 0 : 0,
@@ -20,6 +20,7 @@ const LazyProject = ({ id, src, src2, src3, alt }: { id: string; src: string; sr
                 delay: 0.3,
                 ease: "easeInOut",
             }}
+            viewport={{ once: true }}
         >
             <div
                 className="carousel-inner"

@@ -29,7 +29,7 @@ export const Project2:React.FC<ComponentProps> = ({lenguaje}) => {
         transition={{ duration: 3,
                 ease: "easeInOut"}}
                 viewport={{ once: true }}
-        className="flex flex-col gap-6 lg:gap-8 max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "''Porfolio'' Discover the art of Marisol Arancibia in works and exhibitions. Personal portfolio designed and developed on request" : "''Porfolio'' - Descubre el arte de Marisol Arancibia en obras y exposiciones. Porfolio personal diseñado y desarrollado a pedido"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">

@@ -30,7 +30,7 @@ export const Project4:React.FC<ComponentProps> = ({lenguaje}) => {
         transition={{ duration: 3,
                 ease: "easeInOut"}}
                 viewport={{ once: true }}
-        className="flex flex-col gap-6 lg:gap-6 max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
+        className="flex flex-col gap-6 lg:gap-6 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "''Gallery Art''- Art gallery, with a list of works and artists created in JSON format and rendered on screen, individual routes for each work" : "''Gallery Art'' - Galeria de arte, con listado de obras y artistas creadas en formato JSON y renderizadas en pantalla, rutas individuales para cada obra"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">

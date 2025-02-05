@@ -15,8 +15,8 @@ export const About:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     transition={{ duration: 1.5 }} 
     className="flex flex-col xl:h-[120vh] 2xl:min-h-[80vh] mt-16 md:mt-72 lg:mt-16 gap-24 lg:gap-32 justify-center items-center">
         <h3 className="text-3xl font-medium lg:text-4xl">{lenguaje === "EN" ? "About me" : "Sobre mi"}</h3>
-        <motion.div initial={{ opacity: 0, x: 250 }}
-            whileInView={{ opacity: 1, x: 0 }}
+        <motion.div initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration:3, ease: 'easeOut', delay: 0 }} className="flex flex-col gap-20 p-8 border-2 border-gray-500 rounded-lg shadow-lg lg:w-1/3">
             {lenguaje === "ES" ? <p className="text:lg lg:text-md">Busco adentrarme en el mundo IT como desarrollador frontend, soy una persona motivada a crecer, aprender y
 desarrollarme en distintas áreas. <br></br><br></br>Me considero
