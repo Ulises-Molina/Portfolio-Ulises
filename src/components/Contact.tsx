@@ -36,7 +36,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                         loading="lazy">
         </motion.img>
         </a>
-        <a href={"www.linkedin.com/in/ulises-rafael-molina"} target="_blank">
+        <a href={"https://www.linkedin.com/in/ulises-rafael-molina"} target="_blank">
             <motion.img
                         animate={{
                             translateY: [0,-8 , 8 , 0],
