@@ -19,9 +19,9 @@ export const Projects:React.FC<ComponentProps> = ({lenguaje,menu}) => {
             className="text-3xl font-medium lg:text-4xl">{lenguaje === "EN" ? "Projects" : "Proyectos"}</motion.h2>
             <Project5 lenguaje={lenguaje} menu={menu}/>
             <Project6 lenguaje={lenguaje} menu={menu}/>
+            <Project2 lenguaje={lenguaje} menu={menu}/>
             <Project1 lenguaje={lenguaje} menu={menu}/>
             <Project3 lenguaje={lenguaje} menu={menu}/>
-            <Project2 lenguaje={lenguaje} menu={menu}/>
         </article>
         </AnimatePresence>}
     </>
