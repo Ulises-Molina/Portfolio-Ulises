@@ -13,7 +13,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }} 
-    className="flex flex-col lg:min-h-[80vh] items-center mt-32 md:mt-72 lg:mt-72 xl:mt-32 gap-6 lg:gap-32 mb-20">
+    className="flex flex-col lg:min-h-[60vh] items-center mt-32 md:mt-72 lg:mt-72 xl:mt-0 gap-6 lg:gap-32 mb-20">
         <h2
         className="text-3xl font-medium lg:text-4xl">{lenguaje === "EN" ? "Contact me" : "Contacto"}</h2>
         <div className="flex flex-col gap-28 mt-28">
@@ -32,7 +32,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3"
+                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3"
                         loading="lazy">
         </motion.img>
         </a>
@@ -49,7 +49,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/linkedin.svg" alt="linkedin logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
+                        src="/logos/linkedin.svg" alt="linkedin logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-10"
                         loading="lazy">
         </motion.img>
         </a>
@@ -66,7 +66,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[65px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
+                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
                         loading="lazy">
         </motion.img>
         </a>

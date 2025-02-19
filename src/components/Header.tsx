@@ -1,5 +1,6 @@
 import { LightMode } from "@mui/icons-material"
-import { KeyboardArrowDown,DarkMode,Close,Menu } from "@mui/icons-material"
+import { KeyboardArrowDown,DarkMode,Close,Menu, } from "@mui/icons-material"
+import LanguageIcon from '@mui/icons-material/Language';
 import { useState} from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ComponentProps } from "../types/types";
@@ -123,7 +124,7 @@ export const Header: React.FC<ComponentProps> = ({lenguaje, setLenguaje,menu,set
             )}
             </AnimatePresence>
                 {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="small"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="small"/>}
-            <img src="/logos/icons8-48.png" alt="logo idioma" className="w-9 h-9"></img>
+            <LanguageIcon></LanguageIcon>
             </div>
             {darkMode ? <LightMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/> : <DarkMode className="cursor-pointer hover:opacity-60" fontSize="medium" onClick={changeMode}/>}
         </motion.div>
@@ -194,7 +195,7 @@ export const Header: React.FC<ComponentProps> = ({lenguaje, setLenguaje,menu,set
             )}
             </AnimatePresence>
                 {open ? <Close onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/> : <KeyboardArrowDown onClick={openDiv} className="cursor-pointer hover:opacity-60" fontSize="large"/>}
-            <img src="/logos/icons8-48.png"></img>
+                <LanguageIcon></LanguageIcon>
             </div>
         </div>
     </motion.div>: null}

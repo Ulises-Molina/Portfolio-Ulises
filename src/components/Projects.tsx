@@ -10,7 +10,7 @@ export const Projects:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     return (
     <>
     {menu ? null : <AnimatePresence mode="wait">
-        <article id="projects" className="flex flex-col items-center gap-24 pt-10 pb-20 mt-10 overflow-hidden lg:gap-64">
+        <article id="projects" className="flex flex-col items-center gap-24 pt-5 pb-20 mt-10 overflow-hidden lg:gap-56">
             <motion.h2
             key={lenguaje}
             initial={{ opacity: 0, y: 60 }}

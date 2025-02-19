@@ -22,16 +22,16 @@ export const Main: React.FC<ComponentProps> = ({lenguaje,menu}) => {
             className="flex flex-col self-start justify-center gap-3 mx-8 lg:w-1/3 lg:gap-7 lg:self-center">
                 <motion.h1 initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : 150 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration:2, ease: 'easeOut', delay: .5 }} className="text-2xl font-black 2xl:text-4xl">{lenguaje === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</motion.h1>
+            transition={{ duration:1.6, ease: 'easeOut', delay: .5 }} className="text-2xl font-black 2xl:text-4xl">{lenguaje === "EN" ? "Hi, I'm Ulises Molina" : "Hola, soy Ulises Molina"}</motion.h1>
                 <motion.h2 initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : 250 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration:2, ease: 'easeOut', delay: 1 }} className="text-lg font-black 2xl:text-xl">{lenguaje === "EN" ? "Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</motion.h2>
+            transition={{ duration : 1.6, ease: 'easeOut', delay: 1 }} className="text-lg font-black 2xl:text-xl">{lenguaje === "EN" ? "Frontend developer from Buenos Aires, Argentina" : "Desarrollador frontend de Buenos Aires, Argentina"}</motion.h2>
                 <motion.p initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : 350 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration:2, ease: 'easeOut', delay: 1.5 }} className="font-light 2xl:text-lg text-md">{lenguaje === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</motion.p>
+            transition={{ duration: 1.6, ease: 'easeOut', delay: 1.5 }} className="font-light 2xl:text-lg text-md">{lenguaje === "EN" ? "I like to be in constant growth with the ability to learn new technologies and adapt easily to new work teams. Passionate about challenges and even more so  if they enrich my knowledge. Completely self-taught." : "Me gusta estar en constante crecimiento con capacidad de aprender nuevas tecnologías y adaptarme fácilmente a nuevos equipos de trabajo. Apasionado por los retos y más si enriquecen mis conocimientos. Completamente autodidacta."}</motion.p>
                 <motion.div initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : -200 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration:2, ease: 'easeOut', delay: 2.3 }}
+            transition={{ duration:1.5, ease: 'easeOut', delay: 1.7 }}
                 className="flex flex-col gap-10 mt-10 ">
                     <p className="2xl:text-xl text-md">{lenguaje === "EN" ? "Principal technologies" : "Tecnologías principales"}</p>
                     <div className="flex gap-7 lg:gap-16">
@@ -45,7 +45,7 @@ export const Main: React.FC<ComponentProps> = ({lenguaje,menu}) => {
                 </motion.div>
                 <motion.div initial={{ opacity: 0, x: window.innerWidth < 600 ? 0 : 200 }}
             animate={{ opacity: 2, x: 0 }}
-            transition={{ duration:2, ease: 'easeOut', delay: 2.8 }} className="flex flex-col gap-10 mt-10 ">
+            transition={{ duration:1.7, ease: 'easeOut', delay: 1.7 }} className="flex flex-col gap-10 mt-10 ">
                     <p className="2xl:text-xl text-md">{lenguaje === "EN" ? "Tools and others" : "Herramientas y otros"}</p>
                     <div className="flex gap-7 lg:gap-16">
                     <Logo src="/logos/tailwindcss.svg" alt="logo Tailwind" delay={1} y={12} x={10} link="https://tailwindcss.com/"></Logo>

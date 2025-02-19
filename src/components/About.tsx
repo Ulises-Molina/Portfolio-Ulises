@@ -13,7 +13,7 @@ export const About:React.FC<ComponentProps> = ({lenguaje,menu}) => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }} 
-    className="flex flex-col xl:h-[120vh] 2xl:min-h-[80vh] mt-16 md:mt-72 lg:mt-16 gap-24 lg:gap-32 justify-center items-center">
+    className="flex flex-col xl:h-[100vh] 2xl:min-h-[80vh] mt-16 md:mt-72 lg:mt-5 gap-24 lg:gap-32 justify-center items-center">
         <h3 className="text-3xl font-medium lg:text-4xl">{lenguaje === "EN" ? "About me" : "Sobre mi"}</h3>
         <motion.div initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
