@@ -30,7 +30,7 @@ export const Project3:React.FC<ComponentProps> = ({lenguaje}) => {
         transition={{ duration: 1.7,
                 ease: "easeInOut"}}
                 viewport={{ once: true }}
-        className="flex flex-col gap-6 lg:gap-8 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start m-2 pt-10">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start mx-5 pt-10">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "''MercadoSur''- E-Commerce website. It has functionalities such as search by category, filters by name and price, individual pages by product, shopping cart and payment. Uses API call. It has dark and light mode" : "''MercadoSur'' - Sitio web E-Commerce. Cuenta con funcionalidades como búsqueda por categoría, filtros por nombre y precio, paginas individuales por producto, carrito de compra y pago. Utiliza llamado a API. Cuenta con modo oscuro y claro"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">

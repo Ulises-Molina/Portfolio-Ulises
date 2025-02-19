@@ -3,36 +3,34 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
-        url('/fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-family: 'poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
-        url('/fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-family: 'poppys';
+    src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
-        url('/fonts/montserrat/Montserrat-Light.woff') format('woff');
+    font-family: 'poppins';
+    src: url('/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "poppins";
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: "poppins";
     margin: 0;
     padding: 0;
     overflow-x: hidden;

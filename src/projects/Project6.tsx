@@ -30,7 +30,7 @@ export const Project6:React.FC<ComponentProps> = ({lenguaje}) => {
         transition={{ duration: 1.7,
                 ease: "easeInOut"}}
                 viewport={{ once: true }}
-        className="flex flex-col gap-6 lg:gap-8 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start xl:pt-10">
+        className="flex flex-col gap-6 lg:gap-8 max-w-[400px] xl:max-w-[600px] justify-center items-center xl:items-start xl:pt-10 mx-5">
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "SPA - Users can view the price of various cryptocurrencies in real time and stay up to date with the latest news in the crypto world. Displays an interactive chart for the selected currency over a given time period. The data is updated every 24 hours by the API. It is a page that respects web accessibility and is completely Responsive, adapting to any device. The application has the best practices in SEO" : "SPA - Usuarios pueden visualizar el precio de diversas criptomonedas en tiempo real y mantenerse al tanto de las últimas noticias del mundo cripto. Muestra un gráfico interactivo para la moneda seleccionada en un periodo de tiempo determinado. Los datos se actualizan cada 24hs por la API de CoinGecko, una API de criptomonedas muy utilizada. Es una pagina que respeta la accesibilidad web y es completamente Responsive, se adapta a cualquier dispositivo. La aplicación cuenta con las mejores prácticas en SEO"}</p>
             <p className="text-md lg:text-md">{lenguaje === "EN" ? "Technologies used" : "Tecnologías usadas"}</p>
             <div className="flex gap-10">
