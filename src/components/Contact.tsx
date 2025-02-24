@@ -32,7 +32,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20 mt-3"
+                        src="/logos/gmail.svg" alt="gmail logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-10 mt-3"
                         loading="lazy">
         </motion.img>
         </a>
@@ -66,7 +66,7 @@ export const Contact:React.FC<ComponentProps> = ({lenguaje,menu}) => {
                             repeat: Infinity,
                             delay: 0,
                         }}
-                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-20"
+                        src="/logos/Github_dark.svg" alt="GitHub Logo" className="lg:w-[53px] lg:min-w-10 rounded-xl hover:brightness-100 hover:cursor-pointer transition-all duration-150 brightness-[0.85] w-10"
                         loading="lazy">
         </motion.img>
         </a>
